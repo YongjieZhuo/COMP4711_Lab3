@@ -35,6 +35,17 @@ $second->add_grade(80);
 $second->add_grade(50);
 $students['a456'] = $second;
 
+$third = new Student();
+$third->surname = "Yongjie";
+$third->first_name = "Zhuo";
+$third->add_email('home','Yongjie@braniacs.com');
+$third->add_email('work1','Yongjie@bcit.ca');
+$third->add_grade(95);
+$third->add_grade(90);
+$third->add_grade(85);
+$students['b234'] = $third;
+
+ksort($students); // one of the many sort functions
 foreach($students as $student)
 echo $student->toString();
 ?>
